@@ -1,14 +1,27 @@
 import React from "react";
 import { FiArrowUpRight, FiServer, FiGrid, FiSliders } from "react-icons/fi";
 import { venturesData } from "../data/ventures";
+import fluxiflowLogo from "../assets/ventures/Fluxiflow logo white.png";
 
 export default function FluxiflowSection() {
   const data = venturesData.fluxiflow;
   return (
     <section
       id="fluxiflow-section"
-      className="relative w-full bg-[#F4F3EF] py-24 px-6 md:px-16 select-none"
+      className="relative w-full bg-[#F4F3EF] py-24 px-6 md:px-16 select-none overflow-hidden"
     >
+      {/* Deco: grid modules circle top-right */}
+      <div className="absolute top-10 right-[3%] z-20 rotate-[10deg] hidden lg:flex w-14 h-14 bg-[#DE4A82] border-[3px] border-[#222222] rounded-xl shadow-[5px_5px_0px_0px_#222222] items-center justify-center hover:scale-110 transition-transform duration-150">
+        <span className="text-white text-lg font-black">⊞</span>
+      </div>
+      {/* Deco: "SaaS" pill bottom-left */}
+      <div className="absolute bottom-10 left-[2%] z-20 rotate-[-10deg] hidden lg:flex items-center px-3 py-2 bg-[#8FA4D8] border-[3px] border-[#222222] rounded-full shadow-[4px_4px_0px_0px_#222222] hover:scale-110 transition-transform duration-150">
+        <span className="text-[10px] font-black uppercase tracking-widest text-[#222222]">SAAS ⚙</span>
+      </div>
+      {/* Deco: automation arrow top-left */}
+      <div className="absolute top-8 left-[2%] z-20 rotate-[-14deg] hidden lg:flex w-12 h-12 bg-[#FFD45C] border-[3px] border-[#222222] rounded-full shadow-[4px_4px_0px_0px_#222222] items-center justify-center hover:scale-110 transition-transform duration-150">
+        <span className="text-[#222222] text-lg font-black">→</span>
+      </div>
       <div className="max-w-6xl w-full flex flex-col gap-16 relative z-10 mx-auto">
         
         {/* Section Header */}
@@ -16,9 +29,21 @@ export default function FluxiflowSection() {
           <div className="inline-block self-start px-4 py-1.5 bg-[#DE4A82] text-white text-xs font-black uppercase tracking-wider rounded-xl border-[3px] border-[#222222] shadow-[3.5px_3.5px_0px_0px_#222222] rotate-[1.5deg]">
             08 — VENTURE 03
           </div>
-          <h2 className="font-heading font-black text-6xl md:text-8xl text-[#222222] uppercase tracking-tighter">
-            {data.name}
-          </h2>
+
+          {/* Logo + name row */}
+          <div className="flex flex-col sm:flex-row sm:items-center gap-6">
+            <div className="shrink-0 w-20 h-20 rounded-[16px] border-[3px] border-[#222222] shadow-[4px_4px_0px_0px_#222222] overflow-hidden bg-white flex items-center justify-center p-3">
+              <img
+                src={fluxiflowLogo}
+                alt="Fluxiflow logo"
+                className="w-full h-full object-contain"
+              />
+            </div>
+            <h2 className="font-heading font-black text-6xl md:text-8xl text-[#222222] uppercase tracking-tighter">
+              {data.name}
+            </h2>
+          </div>
+
           <p className="font-heading font-black text-2xl md:text-3.5xl text-[#222222] leading-tight max-w-3xl border-l-[6px] border-[#DE4A82] pl-6 text-left">
             {data.tagline}
           </p>

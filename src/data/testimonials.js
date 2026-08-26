@@ -1,23 +1,23 @@
 export const testimonialsData = [
   {
     id: 1,
-    quote: "Rayan has an exceptional ability to view business problems through a creative lens, and then build the software to solve them. He represents the rare breed of developer-designer-founder.",
-    author: "Dr. K. Raghavan",
-    role: "Head of BCA Department",
-    company: "University of Computer Studies"
+    quote: "Rayan's ability to blend creative vision with sharp business thinking is rare. He doesn't just design — he thinks through every detail with purpose and precision.",
+    author: "Nadeem Safran",
+    role: "",
+    company: ""
   },
   {
     id: 2,
-    quote: "Working with Rayan at Thara Group was an eye-opener. He taught our creative team that visual impact is only half the battle; strategy and analytics are what make campaigns scale.",
-    author: "Shweta Nair",
-    role: "Senior Art Director",
-    company: "Thara Group"
+    quote: "Working with Rayan was a completely different experience. He understands people, brands, and technology in a way that makes everything he touches feel intentional and polished.",
+    author: "Saima Nadeem",
+    role: "",
+    company: ""
   },
   {
     id: 3,
-    quote: "His vision for Fluxify and Zywo is incredibly forward-thinking. Rayan represents the next generation of creative builders from India who are building for the entire world.",
-    author: "Rohan Kapoor",
-    role: "Managing Partner",
-    company: "Apex Tech Ventures"
+    quote: "Rayan brings an energy and ambition that pushes the people around him to think bigger. His work on Zywo is a testament to what happens when creativity meets real strategic depth.",
+    author: "Ashar Mouzy",
+    role: "",
+    company: ""
   }
 ];

@@ -1,6 +1,7 @@
 import React from "react";
 import { FaInstagram, FaBehance, FaLinkedin, FaGithub, FaTwitter, FaYoutube } from "react-icons/fa";
 import Magnetic from "./Magnetic";
+import zywoPoweredBy from "../assets/zywo powered by.png";
 
 export default function WaveFooter({ onConnectClick }) {
   const socials = [
@@ -94,9 +95,28 @@ export default function WaveFooter({ onConnectClick }) {
           </div>
         </div>
 
-        {/* Copyright Credit */}
-        <div className="text-center text-[10px] uppercase font-black tracking-widest text-[#555555]/60 mt-4">
-          &copy; {new Date().getFullYear()} Rayan Hany. All rights reserved.
+        {/* Copyright + Powered By */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mt-4">
+          <span className="text-[10px] uppercase font-black tracking-widest text-[#555555]/60">
+            &copy; {new Date().getFullYear()} Rayan Hany. All rights reserved.
+          </span>
+          <span className="hidden sm:block text-[#555555]/30 text-[10px]">·</span>
+          <a
+            href="https://zywo.in"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 group"
+            aria-label="Secured and powered by Zywo"
+          >
+            <span className="text-[10px] uppercase font-black tracking-widest text-[#555555]/60 group-hover:text-[#222222] transition-colors duration-200">
+              Secured &amp; powered by
+            </span>
+            <img
+              src={zywoPoweredBy}
+              alt="Zywo"
+              className="h-4 w-auto object-contain opacity-60 group-hover:opacity-100 transition-opacity duration-200"
+            />
+          </a>
         </div>
       </div>
     </footer>

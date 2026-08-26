@@ -28,7 +28,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function App() {
   const containerRef = useRef(null);
-  
+
   // Section refs for target scrolling
   const heroRef = useRef(null);
   const introRef = useRef(null);
@@ -78,9 +78,9 @@ export default function App() {
     // 2. Restrained animations context
     const ctx = gsap.context(() => {
       const sections = [
-        introRef, whatIBuildRef, journeyRef, tharaRef, 
-        creativeDirectionRef, zywoRef, fluxifyRef, fluxiflowRef, 
-        projectsRef, mindsetRef, insightsRef, founderRef, 
+        introRef, whatIBuildRef, journeyRef, tharaRef,
+        creativeDirectionRef, zywoRef, fluxifyRef, fluxiflowRef,
+        projectsRef, mindsetRef, insightsRef, founderRef,
         testimonialsRef, socialRef, contactRef
       ];
 
@@ -89,9 +89,9 @@ export default function App() {
         if (!ref.current) return;
         const heading = ref.current.querySelector("h2");
         const eyebrow = ref.current.querySelector("div.inline-block");
-        
+
         if (heading && eyebrow) {
-          gsap.fromTo([eyebrow, heading], 
+          gsap.fromTo([eyebrow, heading],
             { y: 20, opacity: 0 },
             {
               y: 0,
@@ -156,11 +156,11 @@ export default function App() {
       <CustomCursor />
 
       {/* Main outer layout with warm cream background */}
-      <div 
+      <div
         ref={containerRef}
         className="min-h-screen w-full bg-[#F3E8D9] py-8 px-4 md:py-16 md:px-12 relative flex justify-center items-start overflow-x-hidden"
       >
-        
+
         {/* Floating stickers absolute positioned relative to outer wrapper */}
         {/* Design System Sticker */}
         <div className="absolute top-[40px] left-[10%] md:left-[22%] z-20 rotate-[-8deg] bg-[#8FA4D8] border-[3px] border-[#222222] px-4 py-2 rounded-xl shadow-[4px_4px_0px_0px_#222222] flex items-center gap-2 select-none hover:scale-105 transition-transform duration-150">
@@ -199,18 +199,18 @@ export default function App() {
 
         {/* Large Central Canvas Frame */}
         <div className="w-full max-w-5xl bg-[#F4F3EF] border-[3px] border-[#222222] rounded-[32px] shadow-[12px_12px_0px_0px_#222222] relative flex flex-col z-10 mt-12 overflow-hidden">
-          
+
           {/* Custom Header Navigation */}
           <header className="w-full py-6 px-6 md:px-12 flex justify-between items-center border-b-[3px] border-[#222222] bg-[#F4F3EF]">
             <div className="flex items-center gap-3">
               <div className="w-9 h-9 bg-[#FFD45C] border-2 border-[#222222] flex items-center justify-center font-heading font-black text-md text-[#222222] shadow-[2.5px_2.5px_0px_0px_#222222]">
-                RH
+                @
               </div>
               <span className="font-heading font-black text-lg text-[#222222] tracking-tight">
-                rayan.digital
+                rayan_hany_a
               </span>
             </div>
-            
+
             <nav className="hidden md:flex items-center gap-8">
               <button onClick={() => scrollTo(introRef)} className="font-heading font-bold text-sm text-[#222222] hover:text-[#8A63D2] transition-colors cursor-pointer interactive-hover">About</button>
               <button onClick={() => scrollTo(journeyRef)} className="font-heading font-bold text-sm text-[#222222] hover:text-[#319C97] transition-colors cursor-pointer interactive-hover">Journey</button>
@@ -223,9 +223,9 @@ export default function App() {
 
           {/* Section 01: Hero */}
           <div ref={heroRef} className="relative w-full z-10">
-            <HeroSection 
-              onScrollToWork={() => scrollTo(projectsRef)} 
-              onConnectClick={() => setIsConnectOpen(true)} 
+            <HeroSection
+              onScrollToWork={() => scrollTo(projectsRef)}
+              onConnectClick={() => setIsConnectOpen(true)}
             />
           </div>
 

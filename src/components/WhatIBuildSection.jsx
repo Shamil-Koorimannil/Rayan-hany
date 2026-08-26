@@ -29,8 +29,20 @@ const CAPABILITIES = [
   return (
     <section
       id="what-i-build-section"
-      className="relative w-full bg-[#F4F3EF] py-24 px-6 md:px-16 select-none"
+      className="relative w-full bg-[#F4F3EF] py-24 px-6 md:px-16 select-none overflow-hidden"
     >
+      {/* Deco: capability star top-right */}
+      <div className="absolute top-10 right-[3%] z-20 rotate-[20deg] hidden lg:flex w-14 h-14 bg-[#319C97] border-[3px] border-[#222222] rounded-full shadow-[5px_5px_0px_0px_#222222] items-center justify-center hover:scale-110 transition-transform duration-150">
+        <span className="text-white text-lg font-black">✦</span>
+      </div>
+      {/* Deco: "BUILD" pill bottom-right */}
+      <div className="absolute bottom-10 right-[2%] z-20 rotate-[-8deg] hidden lg:flex items-center px-3 py-2 bg-[#FFD45C] border-[3px] border-[#222222] rounded-xl shadow-[4px_4px_0px_0px_#222222] hover:scale-110 transition-transform duration-150">
+        <span className="text-[10px] font-black uppercase tracking-widest text-[#222222]">⚡ BUILD</span>
+      </div>
+      {/* Deco: pink cross badge top-left */}
+      <div className="absolute top-8 left-[2%] z-20 rotate-[-12deg] hidden lg:flex w-12 h-12 bg-[#DE4A82] border-[3px] border-[#222222] rounded-xl shadow-[4px_4px_0px_0px_#222222] items-center justify-center hover:scale-110 transition-transform duration-150">
+        <span className="text-white text-2xl font-black leading-none">+</span>
+      </div>
       <div className="max-w-5xl w-full flex flex-col justify-between relative z-10 gap-16 mx-auto">
         
         {/* Section Header */}

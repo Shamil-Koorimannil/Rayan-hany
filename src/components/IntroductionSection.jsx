@@ -4,8 +4,20 @@ export default function IntroductionSection() {
   return (
     <section
       id="introduction-section"
-      className="relative w-full bg-[#F4F3EF] py-24 px-6 md:px-16 flex items-center justify-center select-none"
+      className="relative w-full bg-[#F4F3EF] py-24 px-6 md:px-16 flex items-center justify-center select-none overflow-hidden"
     >
+      {/* Deco: star burst top-right */}
+      <div className="absolute top-8 right-[4%] z-20 rotate-[12deg] hidden lg:flex w-12 h-12 bg-[#FFD45C] border-[3px] border-[#222222] rounded-xl shadow-[4px_4px_0px_0px_#222222] items-center justify-center hover:scale-110 transition-transform duration-150">
+        <span className="text-[#222222] text-xl font-black leading-none">✦</span>
+      </div>
+      {/* Deco: "INDIA" location pill bottom-left */}
+      <div className="absolute bottom-10 left-[2%] z-20 rotate-[8deg] hidden lg:flex items-center gap-1.5 px-3 py-2 bg-[#8FA4D8] border-[3px] border-[#222222] rounded-full shadow-[4px_4px_0px_0px_#222222] hover:scale-110 transition-transform duration-150">
+        <span className="text-[10px] font-black uppercase tracking-widest text-[#222222]">📍 India</span>
+      </div>
+      {/* Deco: quote circle top-left */}
+      <div className="absolute top-12 left-[2%] z-20 rotate-[-15deg] hidden lg:flex w-14 h-14 bg-[#DE4A82] border-[3px] border-[#222222] rounded-full shadow-[5px_5px_0px_0px_#222222] items-center justify-center hover:scale-110 transition-transform duration-150">
+        <span className="text-white text-2xl font-black leading-none">"</span>
+      </div>
       <div className="max-w-5xl w-full flex flex-col gap-16 relative z-10 mx-auto">
         
         {/* Section Header */}

@@ -41,10 +41,14 @@ export default function TestimonialsSection() {
                 <span className="font-heading font-black text-lg text-[#222222] uppercase tracking-wide">
                   {t.author}
                 </span>
-                <span className="hidden md:inline text-[#222222]/40">&bull;</span>
-                <span className="font-sans font-medium text-[#555555] text-sm md:text-base">
-                  {t.role} at <span className="font-black text-[#319C97]">{t.company}</span>
-                </span>
+                {(t.role || t.company) && (
+                  <>
+                    <span className="hidden md:inline text-[#222222]/40">&bull;</span>
+                    <span className="font-sans font-medium text-[#555555] text-sm md:text-base">
+                      {t.role}{t.role && t.company ? " at " : ""}<span className="font-black text-[#319C97]">{t.company}</span>
+                    </span>
+                  </>
+                )}
               </div>
             </div>
           ))}

@@ -21,8 +21,20 @@ export default function ContactSection() {
   return (
     <section
       id="contact-section"
-      className="relative w-full bg-[#F4F3EF] py-24 px-6 md:px-16 select-none"
+      className="relative w-full bg-[#F4F3EF] py-24 px-6 md:px-16 select-none overflow-hidden"
     >
+      {/* Deco: send arrow circle top-right */}
+      <div className="absolute top-10 right-[3%] z-20 rotate-[10deg] hidden lg:flex w-14 h-14 bg-[#DE4A82] border-[3px] border-[#222222] rounded-full shadow-[5px_5px_0px_0px_#222222] items-center justify-center hover:scale-110 transition-transform duration-150">
+        <span className="text-white text-xl font-black">✉</span>
+      </div>
+      {/* Deco: global pill bottom-left */}
+      <div className="absolute bottom-10 left-[2%] z-20 rotate-[-8deg] hidden lg:flex items-center px-3 py-2 bg-[#FFD45C] border-[3px] border-[#222222] rounded-full shadow-[4px_4px_0px_0px_#222222] hover:scale-110 transition-transform duration-150">
+        <span className="text-[10px] font-black uppercase tracking-widest text-[#222222]">🌏 GLOBAL</span>
+      </div>
+      {/* Deco: spark top-left */}
+      <div className="absolute top-8 left-[2%] z-20 rotate-[-18deg] hidden lg:flex w-12 h-12 bg-[#8A63D2] border-[3px] border-[#222222] rounded-xl shadow-[4px_4px_0px_0px_#222222] items-center justify-center hover:scale-110 transition-transform duration-150">
+        <span className="text-white text-xl font-black">⚡</span>
+      </div>
       <div className="max-w-4xl w-full flex flex-col gap-16 relative z-10 mx-auto">
         
         {/* Section Header */}

@@ -1,6 +1,7 @@
 import React from "react";
 import { FiArrowUpRight, FiShare2, FiZap, FiGlobe } from "react-icons/fi";
 import { venturesData } from "../data/ventures";
+import fluxifyLogo from "../assets/ventures/fluxify logo.png";
 
 export default function FluxifySection() {
   const data = venturesData.fluxify;
@@ -9,6 +10,18 @@ export default function FluxifySection() {
       id="fluxify-section"
       className="relative w-full bg-[#F4F3EF] py-24 px-6 md:px-16 select-none overflow-hidden"
     >
+      {/* Deco: network node circle top-right */}
+      <div className="absolute top-10 right-[3%] z-20 rotate-[18deg] hidden lg:flex w-14 h-14 bg-[#8FA4D8] border-[3px] border-[#222222] rounded-full shadow-[5px_5px_0px_0px_#222222] items-center justify-center hover:scale-110 transition-transform duration-150">
+        <span className="text-[#222222] text-xl font-black">⬡</span>
+      </div>
+      {/* Deco: lightning bolt pill bottom-right */}
+      <div className="absolute bottom-10 right-[2%] z-20 rotate-[6deg] hidden lg:flex items-center px-3 py-2 bg-[#FFD45C] border-[3px] border-[#222222] rounded-xl shadow-[4px_4px_0px_0px_#222222] hover:scale-110 transition-transform duration-150">
+        <span className="text-[10px] font-black uppercase tracking-widest text-[#222222]">⚡ NETWORK</span>
+      </div>
+      {/* Deco: share arrow top-left */}
+      <div className="absolute top-8 left-[2%] z-20 rotate-[-16deg] hidden lg:flex w-12 h-12 bg-[#222222] border-[3px] border-[#222222] rounded-xl shadow-[4px_4px_0px_0px_#8FA4D8] items-center justify-center hover:scale-110 transition-transform duration-150">
+        <span className="text-[#8FA4D8] text-lg font-black">↗</span>
+      </div>
       {/* Decorative background grid representing network lines */}
       <div className="absolute inset-0 opacity-5 bg-[linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)] [background-size:40px_40px] pointer-events-none" />
 
@@ -19,9 +32,21 @@ export default function FluxifySection() {
           <div className="inline-block self-start px-4 py-1.5 bg-[#8A63D2] text-white text-xs font-black uppercase tracking-wider rounded-xl border-[3px] border-[#222222] shadow-[3.5px_3.5px_0px_0px_#222222] rotate-[-2deg]">
             07 — VENTURE 02
           </div>
-          <h2 className="font-heading font-black text-6xl md:text-8xl text-[#222222] uppercase tracking-tighter">
-            {data.name}
-          </h2>
+
+          {/* Logo + name row */}
+          <div className="flex flex-col sm:flex-row sm:items-center gap-6">
+            <div className="shrink-0 w-20 h-20 rounded-[16px] border-[3px] border-[#222222] shadow-[4px_4px_0px_0px_#222222] overflow-hidden bg-white flex items-center justify-center p-2">
+              <img
+                src={fluxifyLogo}
+                alt="Fluxify logo"
+                className="w-full h-full object-contain"
+              />
+            </div>
+            <h2 className="font-heading font-black text-6xl md:text-8xl text-[#222222] uppercase tracking-tighter">
+              {data.name}
+            </h2>
+          </div>
+
           <p className="font-heading font-black text-2xl md:text-3.5xl text-[#222222] leading-tight max-w-3xl border-l-[6px] border-[#8FA4D8] pl-6 text-left">
             {data.tagline}
           </p>

@@ -12,10 +12,10 @@ export default function HeroSection({ onScrollToWork, onConnectClick }) {
       <div className="absolute inset-0 opacity-[0.05] bg-[radial-gradient(#222222_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none" />
 
       <div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10 mx-auto">
-        
+
         {/* Left Side: Editorial Typography & Copy (7 cols) */}
         <div className="lg:col-span-7 flex flex-col justify-center text-left">
-          
+
           {/* Eyebrow Label */}
           <div className="inline-flex mb-6">
             <span className="px-4 py-1.5 bg-[#8FA4D8] text-[#222222] text-xs font-black uppercase tracking-widest rounded-xl border-[3px] border-[#222222] shadow-[3.5px_3.5px_0px_0px_#222222]">
@@ -25,8 +25,8 @@ export default function HeroSection({ onScrollToWork, onConnectClick }) {
 
           {/* Name Header */}
           <h1 className="font-heading font-black text-5xl md:text-7xl tracking-tighter text-[#222222] uppercase leading-[0.95] mb-6">
-            CURIOSITY <br/>
-            DRIVES WHAT <br/>
+            CURIOSITY <br />
+            DRIVES WHAT <br />
             I BUILD.
           </h1>
 
@@ -68,13 +68,13 @@ export default function HeroSection({ onScrollToWork, onConnectClick }) {
           <div className="w-full max-w-[340px] aspect-[4/5] relative">
             {/* Background offset card */}
             <div className="absolute inset-0 bg-[#DE4A82] border-[3px] border-[#222222] rounded-[32px] translate-x-3 translate-y-3 pointer-events-none" />
-            
+
             {/* Portrait Frame */}
             <div className="w-full h-full rounded-[32px] border-[3px] border-[#222222] bg-[#DE4A82] overflow-hidden relative shadow-[8px_8px_0px_0px_#222222] interactive-hover">
               <img
                 src="/Rayan-hany-a.jpg"
                 alt="Rayan Hany Cinematic Portrait"
-                className="w-full h-full object-cover grayscale brightness-105"
+                className="w-full h-full object-cover"
               />
             </div>
 
@@ -96,13 +96,13 @@ export default function HeroSection({ onScrollToWork, onConnectClick }) {
             </div>
 
             {/* Sticker 3: Green Status Pill (Bottom Right) */}
-            <div className="absolute -bottom-3 right-4 bg-[#52B879] border-[3px] border-[#222222] px-4 py-1.5 rounded-full shadow-[3px_3px_0px_0px_#222222] z-20 flex items-center gap-1.5">
+            {/* <div className="absolute -bottom-3 right-4 bg-[#52B879] border-[3px] border-[#222222] px-4 py-1.5 rounded-full shadow-[3px_3px_0px_0px_#222222] z-20 flex items-center gap-1.5">
               <span className="w-2.5 h-2.5 rounded-full bg-white border border-[#222222] animate-pulse" />
               <span className="font-heading font-black text-[10px] text-[#222222] uppercase tracking-wider">Available for work</span>
-            </div>
+            </div> */}
           </div>
         </div>
-        
+
       </div>
 
       {/* Floating Scroll Indicator */}
