@@ -80,7 +80,7 @@ export default function App() {
       const sections = [
         introRef, whatIBuildRef, journeyRef, tharaRef,
         creativeDirectionRef, zywoRef, fluxifyRef, fluxiflowRef,
-        projectsRef, mindsetRef, insightsRef, founderRef,
+        mindsetRef, founderRef,
         testimonialsRef, socialRef, contactRef
       ];
 
@@ -214,9 +214,9 @@ export default function App() {
             <nav className="hidden md:flex items-center gap-8">
               <button onClick={() => scrollTo(introRef)} className="font-heading font-bold text-sm text-[#222222] hover:text-[#8A63D2] transition-colors cursor-pointer interactive-hover">About</button>
               <button onClick={() => scrollTo(journeyRef)} className="font-heading font-bold text-sm text-[#222222] hover:text-[#319C97] transition-colors cursor-pointer interactive-hover">Journey</button>
-              <button onClick={() => scrollTo(projectsRef)} className="font-heading font-bold text-sm text-[#222222] hover:text-[#DE4A82] transition-colors cursor-pointer interactive-hover">Projects</button>
+              {/* <button onClick={() => scrollTo(projectsRef)} className="font-heading font-bold text-sm text-[#222222] hover:text-[#DE4A82] transition-colors cursor-pointer interactive-hover">Projects</button> */}
               <button onClick={() => scrollTo(whatIBuildRef)} className="font-heading font-bold text-sm text-[#222222] hover:text-[#8FA4D8] transition-colors cursor-pointer interactive-hover">Capabilities</button>
-              <button onClick={() => scrollTo(insightsRef)} className="font-heading font-bold text-sm text-[#222222] hover:text-[#52B879] transition-colors cursor-pointer interactive-hover">Insights</button>
+              {/* <button onClick={() => scrollTo(insightsRef)} className="font-heading font-bold text-sm text-[#222222] hover:text-[#52B879] transition-colors cursor-pointer interactive-hover">Insights</button> */}
               <button onClick={() => scrollTo(contactRef)} className="font-heading font-bold text-sm text-[#222222] hover:text-[#8A63D2] transition-colors cursor-pointer interactive-hover">Contact</button>
             </nav>
           </header>
@@ -224,7 +224,7 @@ export default function App() {
           {/* Section 01: Hero */}
           <div ref={heroRef} className="relative w-full z-10">
             <HeroSection
-              onScrollToWork={() => scrollTo(projectsRef)}
+              onScrollToWork={() => scrollTo(whatIBuildRef)}
               onConnectClick={() => setIsConnectOpen(true)}
             />
           </div>
@@ -269,20 +269,20 @@ export default function App() {
             <FluxiflowSection />
           </div>
 
-          {/* Section 10: Selected Work */}
-          <div ref={projectsRef} className="relative w-full z-10">
+          {/* Section 10: Selected Work (Hashed / Commented out) */}
+          {/* <div ref={projectsRef} className="relative w-full z-10">
             <ProjectsSection />
-          </div>
+          </div> */}
 
           {/* Section 11: How I Think */}
           <div ref={mindsetRef} className="relative w-full z-10">
             <MindsetSection />
           </div>
 
-          {/* Section 12: Insights */}
-          <div ref={insightsRef} className="relative w-full z-10">
+          {/* Section 12: Insights / Blogs (Hashed / Commented out) */}
+          {/* <div ref={insightsRef} className="relative w-full z-10">
             <InsightsSection />
-          </div>
+          </div> */}
 
           {/* Section 13: Founder */}
           <div ref={founderRef} className="relative w-full z-10">

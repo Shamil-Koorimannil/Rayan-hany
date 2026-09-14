@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from "react";
+
 import { gsap } from "gsap";
+
 
 export default function CustomCursor() {
   const innerRef = useRef(null);
