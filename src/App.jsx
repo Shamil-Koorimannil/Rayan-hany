@@ -202,14 +202,20 @@ export default function App() {
 
           {/* Custom Header Navigation */}
           <header className="w-full py-6 px-6 md:px-12 flex justify-between items-center border-b-[3px] border-[#222222] bg-[#F4F3EF]">
-            <div className="flex items-center gap-3">
-              <div className="w-9 h-9 bg-[#FFD45C] border-2 border-[#222222] flex items-center justify-center font-heading font-black text-md text-[#222222] shadow-[2.5px_2.5px_0px_0px_#222222]">
+            <a
+              href="https://www.instagram.com/rayan_hany_a?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw=="
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram @rayan_hany_a"
+              className="flex items-center gap-3 group cursor-pointer interactive-hover"
+            >
+              <div className="w-9 h-9 bg-[#FFD45C] border-2 border-[#222222] flex items-center justify-center font-heading font-black text-md text-[#222222] shadow-[2.5px_2.5px_0px_0px_#222222] group-hover:bg-[#DE4A82] group-hover:text-white transition-all duration-150">
                 @
               </div>
-              <span className="font-heading font-black text-lg text-[#222222] tracking-tight">
+              <span className="font-heading font-black text-lg text-[#222222] tracking-tight group-hover:text-[#DE4A82] transition-colors duration-150">
                 rayan_hany_a
               </span>
-            </div>
+            </a>
 
             <nav className="hidden md:flex items-center gap-8">
               <button onClick={() => scrollTo(introRef)} className="font-heading font-bold text-sm text-[#222222] hover:text-[#8A63D2] transition-colors cursor-pointer interactive-hover">About</button>
