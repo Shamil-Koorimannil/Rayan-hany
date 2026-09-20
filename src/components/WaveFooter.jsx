@@ -96,11 +96,22 @@ export default function WaveFooter({ onConnectClick }) {
           </div>
         </div>
 
-        {/* Copyright + Powered By */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mt-4">
+        {/* Copyright + Powered By + Error Page Demo */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mt-4 flex-wrap">
           <span className="text-[10px] uppercase font-black tracking-widest text-[#555555]/60">
             &copy; {new Date().getFullYear()} Rayan Hany. All rights reserved.
           </span>
+          <span className="hidden sm:block text-[#555555]/30 text-[10px]">·</span>
+          <button
+            onClick={() => {
+              window.history.pushState({}, "", "/404");
+              window.dispatchEvent(new Event("popstate"));
+            }}
+            className="text-[10px] uppercase font-black tracking-widest text-[#555555]/60 hover:text-[#DE4A82] transition-colors cursor-pointer interactive-hover"
+            title="Preview Neo-Brutalist Error Page"
+          >
+            System Status / 404
+          </button>
           <span className="hidden sm:block text-[#555555]/30 text-[10px]">·</span>
           <a
             href="https://zywo.in"

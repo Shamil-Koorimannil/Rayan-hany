@@ -23,6 +23,7 @@ import ContactSection from "./components/ContactSection";
 import WaveFooter from "./components/WaveFooter";
 import CustomCursor from "./components/CustomCursor";
 import ConnectPopup from "./components/ConnectPopup";
+import ErrorPage from "./components/ErrorPage";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -50,6 +51,32 @@ export default function App() {
 
   const lenisRef = useRef(null);
   const [isConnectOpen, setIsConnectOpen] = useState(false);
+  const [currentPath, setCurrentPath] = useState(window.location.pathname);
+
+  useEffect(() => {
+    const handlePopState = () => {
+      setCurrentPath(window.location.pathname);
+    };
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
+  }, []);
+
+  // Check if current path is root or unknown/error page
+  const cleanPath = currentPath.replace(/\/$/, "");
+  const isHomePath = cleanPath === "" || cleanPath === "/index.html";
+
+  if (!isHomePath) {
+    const is500Demo = cleanPath.includes("500") || cleanPath.includes("error");
+    return (
+      <ErrorPage
+        code={is500Demo ? "500" : "404"}
+        onGoHome={() => {
+          window.history.pushState({}, "", "/");
+          setCurrentPath("/");
+        }}
+      />
+    );
+  }
 
   useEffect(() => {
     // 1. Initialize Lenis Smooth Scroll
