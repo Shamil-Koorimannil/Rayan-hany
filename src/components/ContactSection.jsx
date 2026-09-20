@@ -61,10 +61,10 @@ export default function ContactSection() {
                 Skip the forms? Drop me an email directly at:
               </p>
               <a 
-                href="mailto:hello@rayanhany.com" 
+                href="mailto:rayanhanya@gmail.com" 
                 className="font-heading font-black text-lg text-[#222222] border-b-2 border-[#DE4A82] pb-0.5 hover:text-[#DE4A82] transition-colors duration-200"
               >
-                hello@rayanhany.com
+                rayanhanya@gmail.com
               </a>
             </div>
 

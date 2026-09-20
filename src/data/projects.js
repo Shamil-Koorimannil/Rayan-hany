@@ -29,7 +29,7 @@ export const projectsData = [
     outcome: "Promoted to Head of Digital Marketing. Increased engagement rates by over 120% and drove substantial customer acquisition growth.",
     tags: ["Digital Strategy", "Brand Marketing", "Analytics & Growth"],
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
-    link: "https://instagram.com",
+    link: "https://www.instagram.com/rayan_hany_a?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==",
     testimonial: {
       quote: "At Thara Group, Rayan moved from clean execution into exceptional leadership. His strategy-driven approach transformed our marketing campaigns.",
       author: "H. Thara",
@@ -48,7 +48,7 @@ export const projectsData = [
     outcome: "Successfully pivoted the brand's identity, driving elevated trust metrics and laying the foundation for strategic corporate partnerships.",
     tags: ["Creative Direction", "Branding", "Multimedia Production"],
     image: "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80",
-    link: "https://linkedin.com",
+    link: "https://www.linkedin.com/in/rayan-hany-a-66320929b/",
     testimonial: {
       quote: "Rayan's vision gave our brand a new life. His creative direction helped us connect with our partners at a deeper strategic level.",
       author: "S. K. Francis",
@@ -67,6 +67,6 @@ export const projectsData = [
     outcome: "Built a fully functioning, database-driven MVP showing publisher portal connections, ad bidding systems, and creator analytics dashboards.",
     tags: ["Full Stack Python", "System Architecture", "AdTech Ecosystem"],
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
-    link: "https://github.com"
+    link: "https://github.com/RayanHany"
   }
 ];

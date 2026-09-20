@@ -1,5 +1,6 @@
 import React from "react";
-import { FaLinkedin, FaInstagram, FaYoutube, FaTwitter, FaFacebook, FaBehance, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaInstagram, FaYoutube, FaFacebook, FaBehance, FaGithub } from "react-icons/fa";
+import { FaThreads } from "react-icons/fa6";
 import Magnetic from "./Magnetic";
 
 const SOCIALS = [
@@ -7,7 +8,7 @@ const SOCIALS = [
     id: 1,
     name: "LinkedIn",
     icon: FaLinkedin,
-    url: "https://linkedin.com",
+    url: "https://www.linkedin.com/in/rayan-hany-a-66320929b/",
     role: "Executive Network & Brand Strategy",
     color: "group-hover:text-[#0077b5]"
   },
@@ -15,47 +16,39 @@ const SOCIALS = [
     id: 2,
     name: "Instagram",
     icon: FaInstagram,
-    url: "https://instagram.com",
+    url: "https://www.instagram.com/rayan_hany_a?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==",
     role: "Creative Portfolios & Visual Art",
     color: "group-hover:text-[#e1306c]"
   },
   {
     id: 3,
-    name: "YouTube",
-    icon: FaYoutube,
-    url: "https://youtube.com",
-    role: "Filmmaking, Tech & Dynamic Content",
-    color: "group-hover:text-[#ff0000]"
+    name: "Threads",
+    icon: FaThreads,
+    url: "https://www.threads.net/@rayan_hany_a",
+    role: "Discussions, Creative Thoughts & Founder Notes",
+    color: "group-hover:text-[#ffffff]"
   },
   {
     id: 4,
-    name: "X (Twitter)",
-    icon: FaTwitter,
-    url: "https://twitter.com",
-    role: "AI, Tech, Products & Founder Notes",
-    color: "group-hover:text-[#1da1f2]"
-  },
-  {
-    id: 5,
     name: "Facebook",
     icon: FaFacebook,
-    url: "https://facebook.com",
+    url: "https://www.facebook.com/rayan.hany.71",
     role: "General Media & Agency Connections",
     color: "group-hover:text-[#1877f2]"
   },
   {
-    id: 6,
+    id: 5,
     name: "Behance",
     icon: FaBehance,
-    url: "https://behance.net",
+    url: "https://www.behance.net/rayanhany?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAcGRvZgJleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAaeu7uI4JARRv1CF5eoLzDJl4K_Hwk3vSN5ciXNhzrktqN3_eCMeuMET_hqR6Q_aem_RQPcQ1C85KhVo4JEdbEoPw",
     role: "Design Systems & Case Studies",
     color: "group-hover:text-[#1769ff]"
   },
   {
-    id: 7,
+    id: 6,
     name: "GitHub",
     icon: FaGithub,
-    url: "https://github.com",
+    url: "https://github.com/RayanHany",
     role: "SaaS Repositories & Open Source",
     color: "group-hover:text-[#ffffff]"
   }

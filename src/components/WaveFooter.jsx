@@ -1,16 +1,17 @@
 import React from "react";
-import { FaInstagram, FaBehance, FaLinkedin, FaGithub, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaInstagram, FaBehance, FaLinkedin, FaGithub, FaFacebook, FaYoutube } from "react-icons/fa";
+import { FaThreads } from "react-icons/fa6";
 import Magnetic from "./Magnetic";
 import zywoPoweredBy from "../assets/zywo powered by.png";
 
 export default function WaveFooter({ onConnectClick }) {
   const socials = [
-    { id: 1, icon: FaLinkedin, label: "LinkedIn", url: "https://linkedin.com" },
-    { id: 2, icon: FaInstagram, label: "Instagram", url: "https://instagram.com" },
-    { id: 3, icon: FaTwitter, label: "X", url: "https://twitter.com" },
-    { id: 4, icon: FaYoutube, label: "YouTube", url: "https://youtube.com" },
-    { id: 5, icon: FaBehance, label: "Behance", url: "https://behance.net" },
-    { id: 6, icon: FaGithub, label: "GitHub", url: "https://github.com" }
+    { id: 1, icon: FaLinkedin, label: "LinkedIn", url: "https://www.linkedin.com/in/rayan-hany-a-66320929b/" },
+    { id: 2, icon: FaInstagram, label: "Instagram", url: "https://www.instagram.com/rayan_hany_a?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" },
+    { id: 3, icon: FaThreads, label: "Threads", url: "https://www.threads.net/@rayan_hany_a" },
+    { id: 4, icon: FaFacebook, label: "Facebook", url: "https://www.facebook.com/rayan.hany.71" },
+    { id: 5, icon: FaBehance, label: "Behance", url: "https://www.behance.net/rayanhany?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAcGRvZgJleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAaeu7uI4JARRv1CF5eoLzDJl4K_Hwk3vSN5ciXNhzrktqN3_eCMeuMET_hqR6Q_aem_RQPcQ1C85KhVo4JEdbEoPw" },
+    { id: 6, icon: FaGithub, label: "GitHub", url: "https://github.com/RayanHany" }
   ];
 
   return (
