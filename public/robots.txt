@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rayanhany.com/sitemap.xml
+Sitemap: https://www.rayanhany.com/sitemap.xml
